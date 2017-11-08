@@ -1,0 +1,2 @@
+module ReactOnRailsHelper
+end
