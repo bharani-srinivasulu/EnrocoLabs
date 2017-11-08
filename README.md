@@ -2,7 +2,7 @@
 
 Enroco Labs is the base of Enroco react product suite!
 
-#Getting Started:
+# Getting Started:
 
 == Follow the guidelines to start developing your application. You can find
 the following resources handy:
@@ -13,15 +13,15 @@ the following resources handy:
 == Steps to follow to integrate react and webpacker into the rails application
 
 1. At the command prompt, create a new Rails application:
-       <tt>rails new myapp</tt> (where <tt>myapp</tt> is the application name)
+       <tt>rails new app_name</tt> (where <tt>app_name</tt> is the application name)
 
-2. Change directory to <tt>myapp</tt> and start the web server:
-       <tt>cd myapp; rails server</tt> (run with --help for options)
+2. Change directory to <tt>app_name</tt> and start the web server:
+       <tt>cd app_name; rails server</tt> (run with --help for options)
 
 3. Go to http://localhost:3000/ and you'll see:
        "Welcome aboard: You're riding Ruby on Rails!"
 
-4. Add react-rails, webpacker gems in the Gemfile
+4. Add 'react-rails`, `webpacker` gems in the Gemfile
 
 5. Run `bundle install`
 
@@ -46,20 +46,20 @@ the following resources handy:
 13. Create a controller, run
 				`rails generate controller 'controller_name' 'action_name'`
 
-14. Add the root path in routes.rb file to map the rails requests to the root of the application, as below
-				root 'controller#action'
+14. Add the root path in routes.rb file to map the rails requests to the root of the application, as
+				`root 'controller#action'`
 
 15. Create a react component in app/javascript/controller
 
-16. Add it to the views, as below
-				- <%= react_component('component_name') %> or
+16. To render the react components, add the below tag in the views
+				* <%= javascript_pack_tag 'application' %>
 
-				- <%= react_component('folder_name/component_name') %>
-		pass props to the component, as below
-				- <%= react_component('component_name', {props})>
+17. Add it to the views, as
+				* <%= react_component('component_name') %> or
+				* <%= react_component('folder_name/component_name') %>
 
-17. Add the components in packs folder, as below
-				- <%= javascript_pack_tag 'file_name' %>
+18. Pass props to the component, as below
+				* <%= react_component('component_name', {props})>
 
-18. To render the react components, add the below tag in the views
-				- <%= javascript_pack_tag 'application' %>
+19. Add the components in packs folder, as below
+				* <%= javascript_pack_tag 'file_name' %>
