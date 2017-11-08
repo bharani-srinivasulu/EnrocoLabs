@@ -21,7 +21,7 @@ the following resources handy:
 3. Go to http://localhost:3000/ and you'll see:
        "Welcome aboard: You're riding Ruby on Rails!"
 
-4. Add 'react-rails`, `webpacker` gems in the Gemfile
+4. Add `react-rails`, `webpacker` gems in the Gemfile
 
 5. Run `bundle install`
 
@@ -52,14 +52,14 @@ the following resources handy:
 15. Create a react component in app/javascript/controller
 
 16. To render the react components, add the below tag in the views
-				* <%= javascript_pack_tag 'application' %>
+				 `<%= javascript_pack_tag 'application' %>`
 
 17. Add it to the views, as
-				* <%= react_component('component_name') %> or
-				* <%= react_component('folder_name/component_name') %>
+				`<%= react_component('component_name') %> or`
+				`<%= react_component('folder_name/component_name') %>`
 
 18. Pass props to the component, as below
-				* <%= react_component('component_name', {props})>
+				`<%= react_component('component_name', {props})>`
 
 19. Add the components in packs folder, as below
-				* <%= javascript_pack_tag 'file_name' %>
+				`<%= javascript_pack_tag 'file_name' %>`
