@@ -36,6 +36,8 @@ gem 'webpacker', '~> 2.0'
 # Rendering components
 gem 'react-rails', '~> 2.1'
 
+gem 'rails-i18n'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
