@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack",
-    "start": "webpack-dev-server",
+    "start": "bin/webpack-dev-server",
     "test": "npm run karma -- --single-run",
     "karma": "BABEL_ENV=development NODE_ENV=test node_modules/karma/bin/karma start karma.conf.js"
   },
@@ -58,6 +58,7 @@
     "chai-dom": "^1.6.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-15": "^1.0.5",
+    "eslint": "^4.11.0",
     "karma": "^1.7.1",
     "karma-chai": "^0.1.0",
     "karma-chai-dom": "^1.1.0",
