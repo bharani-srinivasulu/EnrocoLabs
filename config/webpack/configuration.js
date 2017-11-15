@@ -9,6 +9,11 @@ const configPath = resolve('config', 'webpacker.yml')
 const loadersDir = join(__dirname, 'loaders')
 const settings = safeLoad(readFileSync(configPath), 'utf8')[env.NODE_ENV]
 
+const enzyme = require('enzyme');
+const Adapter = require('enzyme-adapter-react-15');
+
+enzyme.configure({ adapter: new Adapter() });
+
 function removeOuterSlashes(string) {
   return string.replace(/^\/*/, '').replace(/\/*$/, '')
 }
