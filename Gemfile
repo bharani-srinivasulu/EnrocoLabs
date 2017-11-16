@@ -37,6 +37,7 @@ gem 'webpacker', '~> 2.0'
 gem 'react-rails', '~> 2.1'
 
 gem 'rails-i18n'
+gem 'dalli'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
