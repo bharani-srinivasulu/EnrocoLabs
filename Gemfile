@@ -38,6 +38,8 @@ gem 'react-rails', '~> 2.1'
 
 gem 'rails-i18n'
 gem 'dalli'
+gem 'memcachier'
+gem 'connection_pool'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
