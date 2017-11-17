@@ -1,0 +1,22 @@
+language: ruby
+sudo: required
+dist: trusty
+branches:
+  only:
+    - master
+notifications:
+  email: false
+addons:
+  chrome: stable
+cache:
+  bundler: true
+  yarn: true
+  directories: node_modules
+install:
+  - bundle install
+  - node -v
+  - npm i -g yarn
+  - yarn
+gemfile: gemfiles/rails_5_no_sprockets_webpacker_2.gemfile
+before_script:
+  - npm prune
